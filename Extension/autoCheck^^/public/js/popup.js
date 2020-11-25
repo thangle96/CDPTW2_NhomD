@@ -8,10 +8,10 @@ $(document).ready(function(){
 		$.get("http://localhost:80/nnnnn/login/checkhs.php",{mssv:mssv,status:status},function (data) {
 			if (data== 1)
 			{
-				$("#thongbao").html(`<div class='text bg-blue'>Điểm danh thành công!!!</div>`);
-			} else {
 				$("#thongbao").html(`<div class='text bg-blue'>Điểm danh không thành công!!!</div>`);
-				}
+			} else {
+				$("#thongbao").html(`<div class='text bg-blue'>Điểm danh thành công!!!</div>`);
+			}
 		})
 	});
 })
